@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log in &#x2022; Instagram</title>
+    <link
+      rel="icon"
+      href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="right.component.css" />
+  </head>
+  <body>
+    <div class="body-page">
+      <div class="img-container">
+        <img class="img" src="images/ins.png" alt="Instagram logo" />
+      </div>
+      <div>
+        <div>
+          <input
+            class="user-id"
+            type="text"
+            id="loginName"
+            placeholder="Phone Number, Username or Email Address"
+            required
+          />
+        </div>
+        <div class="input-wrapper">
+          <input
+            class="pass"
+            type="password"
+            id="loginPassword"
+            placeholder="Password"
+            required
+            oninput="toggleButtonState()"
+          />
+          <button
+            type="button"
+            class="show"
+            id="showButton"
+            onclick="togglePassword()"
+            style="display: none"
+          >
+            Show
+          </button>
+        </div>
+        <div>
+          <button type="button" class="login-button" onclick="login()">
+            Log in
+          </button>
+        </div>
+        <div>
+          <p class="or">OR</p>
+        </div>
+        <div>
+          <p class="fb">
+            <a href="#" class="fa fa-facebook"></a>Log in with Facebook
+          </p>
+        </div>
+        <div>
+          <p class="forg">Forgotten Your Password</p>
+        </div>
+      </div>
+    </div>
+    <div class="last">
+      <p>
+        Don't have an account?
+        <a href="register.html"><strong class="sign">Sign up</strong></a>
+      </p>
+    </div>
+  </body>
+</html>
